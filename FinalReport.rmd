@@ -31,6 +31,13 @@ Is attitude toward capitol punishment (cappun) independent of race (race)?
 If not, then whose view differs from whom??
 
 # Methods
+Cappun- Categorical 
+Race- Categorical 
+They are both categorical so I will be using the cat~cat helper file
+
+$H_0$ There is no relation between race and cappun
+$H_A$ There is a relationship between race and cappun
+
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
 
@@ -43,6 +50,13 @@ If not, then whose view differs from whom??
 ### Graphical Descriptive Results
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question. Bottom line is to explain the features of the graph that are relevant to conforming or departing to what is expected by your null hypothesis !-->
+
+```{r}
+barchartGC(~race + cappun,data=mydata)
+barchartGC(~race + cappun,data=mydata, type="percent")
+
+```
+In the barchart it shows that white has the highest percent in favoring cappun, and for the other races they almost have the same percentage in favoring in cappun.
 
 
 
