@@ -88,7 +88,7 @@ The race white is 65.10% in favor in cappun, while the other races and black are
 ```{r}
 chisq.test(table1)
 chisqtestGC(table1)
-fisher.test(table1)
+print(fisher.test(table1))
 ```
 
 The p-value for the chi square test is 0.00000000000000022 so we reject the null hypothesis. So we know cappun relationship with race is related, white race tends to favor cappun more than other races.
@@ -100,3 +100,8 @@ The p-value for the chi square test is 0.00000000000000022 so we reject the null
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+The original question was if there was a relation between cappun and race, based off the cat~cat helper file I used because both pf them were categorical. So what I got from the bar chart it shows that white has the highest percent in favoring cappun, and for the other races they almost have the same percentage in favoring in cappun. Now with the numerical results from the cat~cat file it shows That the race white is 65.10% in favor in cappun, while the other races and black are pretty the same percentage. The inferential states that the p-value for the chi square test is 0.00000000000000022 so we reject the null hypothesis. So we know cappun relationship with race is related, white race tends to favor cappun more than other races.In conclusion there is a relationship between race and cappun based off of the data I got from all of these test. There isn't no fisher test numbers so you said don't write about it.
+
+
+
